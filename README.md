@@ -2,6 +2,13 @@
 
 The project aims to develop an e-commerce website with various features and functionalities. The technologies used in this project include Java, Spring Boot, Hibernate, Thymeleaf, Bootstrap, jQuery, HTML, and RESTful Web services.
 
+## About Project
+
+The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository. The project's maintainers are actively reviewing and merging contributions from the community.
+
+Please note that this is a sample README file, and the actual setup and development process may vary based on your specific requirements and configurations.
+
+
 ## Project Overview
 
 The project consists of two main applications: the Admin application and the Shopping application.
@@ -72,12 +79,6 @@ I would like to express my gratitude to **Nam Ha Minh** for their valuable contr
 
 Thank you, Nam Ha Minh, for sharing your knowledge and helping the community!
 
-## About Project
 
-The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository. The project's maintainers are actively reviewing and merging contributions from the community.
-
-Please note that this is a sample README file, and the actual setup and development process may vary based on your specific requirements and configurations. For detailed instructions and specific configuration details, refer to the project's documentation or README file provided in the repository.
-
-Enjoy exploring and developing the Spring Boot E-Commerce project!
 
 
