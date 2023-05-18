@@ -1,6 +1,6 @@
 # Spring Boot E-Commerce Project
 
-This is a sample README file for a Spring Boot E-Commerce project. The project aims to develop an e-commerce website with various features and functionalities. The technologies used in this project include Java, Spring Boot, Hibernate, Thymeleaf, Bootstrap, jQuery, HTML, and RESTful Web services.
+The project aims to develop an e-commerce website with various features and functionalities. The technologies used in this project include Java, Spring Boot, Hibernate, Thymeleaf, Bootstrap, jQuery, HTML, and RESTful Web services.
 
 ## Project Overview
 
