@@ -4,7 +4,7 @@ The project aims to develop an e-commerce website with various features and func
 
 ## About Project
 
-The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository. The project's maintainers are actively reviewing and merging contributions from the community.
+The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository.
 
 Please note that this is a sample README file, and the actual setup and development process may vary based on your specific requirements and configurations.
 
@@ -75,7 +75,7 @@ To deploy and run the project, follow these steps:
 I would like to express my gratitude to **Nam Ha Minh** for their valuable contributions and guidance throughout the development of this project. Their tutorials and videos were immensely helpful in understanding and implementing various aspects of the e-commerce website. I highly recommend checking out their content for anyone interested in learning more about Spring Boot and e-commerce application development.
 
 - Nam Ha Minh's GitHub: [Github](https://github.com/namhaminh)
-- Nam Ha Minh's YouTube Channel: [Youtube](https://www.youtube.com/user/@CodeJava)
+- Nam Ha Minh's YouTube Channel: [Youtube](https://www.youtube.com/@CodeJava)
 
 Thank you, Nam Ha Minh, for sharing your knowledge and helping the community!
 
