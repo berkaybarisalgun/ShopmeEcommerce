@@ -113,7 +113,7 @@ public class User {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //The toString() method returns textual representation of a object. It will be invoked by System.out.print() method and also by Thymeleaf's print value expression. In most cases, we use toString() for testing/debugging purpose.
         return "User{" +
                 "id=" + id +
                 ", email='" + email + '\'' +

@@ -47,7 +47,7 @@ public class UserRepositoryTests {
     }
     @Test
     public void testListAllUsers(){
-        Iterable<User> listUsers=repo.findAll();
+        Iterable<User> listUsers=repo.findAll();// we used  Iterable is the super type of List. So it's very normal to return Iterable instead of List.
         listUsers.forEach(user -> System.out.println(user));
     }
     @Test
