@@ -4,7 +4,7 @@ The project aims to develop an e-commerce website with various features and func
 
 ## About Project
 
-The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository. The project's maintainers are actively reviewing and merging contributions from the community.
+The project is still under active development, and additional features and improvements are being made. You can contribute to the project by submitting bug reports, feature requests, or pull requests on the project's GitHub repository.
 
 Please note that this is a sample README file, and the actual setup and development process may vary based on your specific requirements and configurations.
 
