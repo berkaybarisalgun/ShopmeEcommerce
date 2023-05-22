@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb0630b-be5a-4d34-8b17-0a3905705035" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/user/UserRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/user/UserRepositoryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,22 @@
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.ShopmeBackEndApplication">
+    <configuration name="UserRepositoryTests.testGetUserByEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShopmeBackEnd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopme.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopme.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.shopme.admin.user.UserRepositoryTests" />
+      <option name="METHOD_NAME" value="testGetUserByEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopmeBackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ShopmeBackEnd" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shopme.admin.ShopmeBackEndApplication" />
@@ -67,6 +83,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserRepositoryTests.testGetUserByEmail" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +99,7 @@
       <updated>1684713593539</updated>
       <workItem from="1684713594863" duration="124000" />
       <workItem from="1684713728494" duration="1516000" />
-      <workItem from="1684715770245" duration="648000" />
+      <workItem from="1684715770245" duration="6584000" />
     </task>
     <servers />
   </component>

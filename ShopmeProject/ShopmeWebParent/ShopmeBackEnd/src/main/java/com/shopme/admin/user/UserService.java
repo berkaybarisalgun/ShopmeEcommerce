@@ -35,6 +35,11 @@ public class UserService {
     private void encodePassword(User user){
         String encoded=passwordEncoder.encode(user.getPassword());
         user.setPassword(encoded);
+    }
+
+    public boolean isEmailunique(String email){
+        User userByEmail = repo.getUserByEmail(email);
+        return userByEmail==null;
 
     }
 

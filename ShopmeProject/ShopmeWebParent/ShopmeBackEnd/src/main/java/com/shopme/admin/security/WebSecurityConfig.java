@@ -7,20 +7,20 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
-@EnableWebSecurity
 public class WebSecurityConfig {
 
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();//when I remove it everything looks ok! ilk girişte bi kapat sonra bir daha gir
+
     }
 
 
 
 
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests().anyRequest().denyAll();
+        http.authorizeHttpRequests().anyRequest().authenticated();
     }
 
 }
