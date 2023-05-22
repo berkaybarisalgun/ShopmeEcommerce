@@ -35,5 +35,11 @@ public class UserService {
     private void encodePassword(User user){
         String encoded=passwordEncoder.encode(user.getPassword());
         user.setPassword(encoded);
+
     }
+
+
+
+
+
 }
