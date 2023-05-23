@@ -44,7 +44,7 @@ The Shopping application is the front-end of the e-commerce website where custom
 
 ## Additional Technologies
 
-In addition to the main features and functionalities, the project also utilizes the following technologies:
+In addition to the main features and functions, I also want to implement the following technologies in the project, but it is not certain yet.
 
 - Spring Data JPA and Hibernate: Persistence and database management. These technologies provide seamless integration with the database, allowing efficient storage and retrieval of data.
 - Spring Security: Authentication and authorization. The project uses Spring Security to handle user authentication and authorization, ensuring that only authorized users can access certain features and resources.
@@ -65,10 +65,9 @@ To deploy and run the project, follow these steps:
 1. Clone the project repository from [GitHub](https://github.com/your-repo-link).
 2. Install the necessary dependencies and ensure you have Java and Maven installed on your system.
 3. Set up a database (e.g., MySQL, PostgreSQL) and configure the database connection in the project's configuration files.
-4. Provide the required credentials and configurations for external services such as PayPal and Amazon S3.
-5. Build the project using Maven by running the command `mvn clean install` in the project's root directory.
-6. Once the build is successful, run the project using the command `java -jar target/your-project-name.jar`.
-7. Access the application in your web browser by navigating to `http://localhost:8080`.
+4. Build the project using Maven by running the command `mvn clean install` in the project's root directory.
+5. Once the build is successful, run the project using the command `java -jar target/your-project-name.jar`.
+6. Access the application in your web browser by navigating to `http://localhost:8080`.
 
 ## Acknowledgements
 
