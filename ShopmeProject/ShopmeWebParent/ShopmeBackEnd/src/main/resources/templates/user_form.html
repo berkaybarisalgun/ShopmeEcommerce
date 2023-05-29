@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"> <!--this is for the mobile -->
-	<title>Create New User</title>
+	<title>[[${pageTitle}]]</title>
 	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}"/><!-- It tells to thymeleaf to interpret and render the URL -->
 	<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
 	<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
@@ -35,7 +35,7 @@
 	</nav>
 </div>
 	<div>
-		<h2>Manage Users | Create New User</h2>
+		<h2>Manage Users | [[${pageTitle}]]</h2>
 	</div>
 <div style="display: flex; justify-content: center;">
 	<form th:action="@{/users/save}" method="post" style="max-width: 700px;"

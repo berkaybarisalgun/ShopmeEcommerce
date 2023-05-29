@@ -71,7 +71,8 @@
 						<a th:if="${user.enabled==false}"  class="fas fa-solid fa-check-circle fa-2x icon-dark" href=""></a>
 					</td>
 					<td>
-						<a class="fas fa-user-pen fa-2x icon-blue"></a>
+						<a class="fas fa-user-pen fa-2x icon-blue" th:href="@{'/users/edit/'+${user.id}}"
+						title="Edit this user"></a>
 						&nbsp;
 						<a class="fas fa-solid fa-trash fa-2x icon-red"></a></td><!--Non break space -->
 				</tr>
