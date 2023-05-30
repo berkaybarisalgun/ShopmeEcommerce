@@ -40,6 +40,7 @@
 <div style="display: flex; justify-content: center;">
 	<form th:action="@{/users/save}" method="post" style="max-width: 700px;"
 	th:object="${user}" onsubmit="return checkEmailUnique(this);">
+		<input type="hidden" th:field="*{id}" />
 	<div class="border border-secondary rounded p-3">
 		 <div class="form-group row">
 			 <label class="col-sm-4 col-form-label">E-mail</label>
@@ -66,7 +67,9 @@
 		<div class="form-group row">
 			<label class="col-sm-4 col-form-label">Password:</label>
 			<div class="col-sm-8">
-			<input type="password" class="form-control" size="60" th:field="*{password}" required minlength="8" maxlength="20"/>
+			<input th:if="${user.id==null}" type="password" class="form-control" size="60" th:field="*{password}" required minlength="8" maxlength="20"/>
+
+			<input th:if="${user.id!=null}" type="password" class="form-control" size="60" th:field="*{password}"  minlength="8" maxlength="20"/>
 			</div>
 		</div>
 		<br>

@@ -29,7 +29,19 @@ public class UserService {
 
 
     public void save(User user) {
-        encodePassword(user);
+        boolean isUpdatingUser=(user.getId()!=null);
+        if(isUpdatingUser){
+            User existingUser=repo.findById(user.getId()).get();
+            if(user.getPassword().isEmpty()){
+                user.setPassword(existingUser.getPassword());
+            }
+            else{
+                encodePassword(user);
+            }
+        }else{
+            encodePassword(user);
+        }
+
         repo.save(user);
     }
 
@@ -38,9 +50,19 @@ public class UserService {
         user.setPassword(encoded);
     }
 
-    public boolean isEmailunique(String email){
+    public boolean isEmailunique(Integer id,String email){
         User userByEmail = repo.getUserByEmail(email);
-        return userByEmail==null;
+        if(userByEmail==null) return true;
+        boolean isCreatingNew=(id==null);
+        if(isCreatingNew){
+            if(userByEmail!=null) return false;
+        }
+        else{
+            if(userByEmail.getId()!=id){
+                return false;
+            }
+        }
+        return true;
 
     }
 
