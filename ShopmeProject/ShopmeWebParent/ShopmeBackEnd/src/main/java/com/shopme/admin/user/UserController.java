@@ -50,8 +50,11 @@ public class UserController { //controller->service->repo
                            RedirectAttributes redirectAttributes){
         try{
             User user=service.get(id);
+            List<Role> listRoles=service.listRoles();
             model.addAttribute("user",user);
             model.addAttribute("pageTitle","Edit user(ID: "+id+")");
+            model.addAttribute("listRoles",listRoles);
+
 
             return "user_form";
         } catch (UserNotFoundException ex){
