@@ -62,6 +62,22 @@ public class UserController { //controller->service->repo
             return "redirect:/users";
         }
     }
+    @GetMapping("/users/delete/{id}")
+    public String deleteUser(@PathVariable(name="id") Integer id,
+                           Model model,
+                           RedirectAttributes redirectAttributes){
+            try{
+                service.delete(id);
+                redirectAttributes.addFlashAttribute("message",
+                        "The user ID:"+id+ " deleted succesfully ");
+
+            }
+            catch (UserNotFoundException ex){
+                redirectAttributes.addFlashAttribute("message",ex.getMessage());
+            }
+        return "redirect:/users";
+
+    }
 
 
 
