@@ -132,13 +132,12 @@
 	});
 
 	function checkEmailUnique(form) {//31
-		url = "[[@{/users/check_email}]]";
+		url = "[[@{/users/check_email}]]";//kontrol et
 		userEmail = $("#email").val();
 		userId = $("#id").val();
 		csrfValue = $("input[name='_csrf']").val();
 
 		params = {id: userId, email: userEmail, _csrf: csrfValue};
-
 
 
 

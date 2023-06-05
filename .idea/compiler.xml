@@ -11,13 +11,6 @@
         <module name="ShopmeFrontEnd" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ShopmeBackEnd" target="17" />
-      <module name="ShopmeCommon" target="17" />
-      <module name="ShopmeFrontEnd" target="17" />
-      <module name="ShopmeProject" target="1.5" />
-      <module name="ShopmeWebParent" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
