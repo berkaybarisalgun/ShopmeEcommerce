@@ -2,6 +2,7 @@ package com.shopme.admin.user;
 
 import com.shopme.common.entity.Role;
 import com.shopme.common.entity.User;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -27,8 +28,13 @@ public class UserService {
         return (List<Role>) roleRepo.findAll();
    }
 
+   /*public void deneme(){
+        User user=repo.findById();
+        user.getEnabled().booleanValue()
+    }
+    */
 
-    public void save(User user) {
+    public User save(User user) {
         boolean isUpdatingUser=(user.getId()!=null);
         if(isUpdatingUser){
             User existingUser=repo.findById(user.getId()).get();
@@ -42,8 +48,10 @@ public class UserService {
             encodePassword(user);
         }
 
-        repo.save(user);
+       return repo.save(user);
     }
+
+
 
     private void encodePassword(User user){
         String encoded=passwordEncoder.encode(user.getPassword());
@@ -83,5 +91,15 @@ public class UserService {
             throw new UserNotFoundException("Couldn't find any user with Id:"+id);
         }
         repo.deleteById(id);
+    }
+
+    //public void updateUserEnabledStatus(Integer id,boolean enabled){
+        //repo.updateEnabledStatus(id,enabled);
+    //}
+
+    public void updateUserEnabledStatu(Integer id,boolean enabled){
+        User user=repo.findById(id).orElseThrow();
+        user.setEmail("ilkerim@gmail.com");
+        user.setEnabled(enabled);
     }
 }

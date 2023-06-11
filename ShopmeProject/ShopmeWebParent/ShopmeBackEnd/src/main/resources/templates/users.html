@@ -61,14 +61,24 @@
 			<tbody>
 				<tr th:each="user:${listUsers}">
 					<td>[[${user.id}]]</td>
-					<td><span class="fas fa-portrait fa-3x icon-silver"></span></td><!--I will code here later this is images**-->
+					<td>
+						<span th:if="${user.photos==null}"class="fas fa-portrait fa-3x icon-silver"></span><!--I will code here later this is images**-->
+						<img th:if="${user.photos!=null }" th:src="@{${user.photosImagePath}}"
+						style="width: 50px"/>
+					</td>
 					<td>[[${user.email}]]</td>
 					<td>[[${user.firstName}]]</td><!--Attributes which is "email""firstName"etc has to be same name with-->
 					<td>[[${user.lastName}]]</td>
 					<td>[[${user.roles}]]</td>
 					<td>
-						<a th:if="${user.enabled==true}"  class="fa-sharp fa-solid fa-circle-check fa-2x icon-green" href=""></a>
-						<a th:if="${user.enabled==false}"  class="fas fa-solid fa-check-circle fa-2x icon-dark" href=""></a>
+						<a th:if="${user.enabled==true}"  class="fa-sharp fa-solid fa-circle-check fa-2x icon-green"
+						   th:href="@{'users/' + ${user.id}+'/enabled/false'} "
+						   title="Disable this user"
+						></a>
+						<a th:if="${user.enabled==false}"  class="fas fa-solid fa-circle fa-2x icon-dark"
+						   th:href="@{'users/' + ${user.id}+'/enabled/true'} "
+						   title="Enable this user"
+						></a>
 					</td>
 					<td>
 						<a class="fas fa-user-pen fa-2x icon-blue" th:href="@{'/users/edit/'+${user.id}}"
