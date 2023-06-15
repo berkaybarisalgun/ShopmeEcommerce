@@ -29,7 +29,7 @@ public class User {
     private boolean enabled;
     @ManyToMany // we used many to many because For example, in an e-commerce application, a user may need to have both the "Seller" and "Editor" roles. In this case, the ManyToMany relationship allows a user to have multiple roles and the same role to be shared by multiple users.
     @JoinTable(
-            name="users_role",
+            name="users_roles",
             joinColumns = @JoinColumn(name = "user_id"), //defines foreign key
             inverseJoinColumns = @JoinColumn(name = "role_id ")//check section 07 page 18 you will get it.
     )
