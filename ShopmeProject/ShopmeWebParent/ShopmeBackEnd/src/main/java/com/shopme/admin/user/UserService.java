@@ -93,9 +93,9 @@ public class UserService {
         repo.deleteById(id);
     }
 
-    //public void updateUserEnabledStatus(Integer id,boolean enabled){
-        //repo.updateEnabledStatus(id,enabled);
-    //}
+    public void updateUserEnabledStatus(Integer id,boolean enabled){
+        repo.updateEnabledStatus(id,enabled);
+    }
 
     public void updateUserEnabledStatu(Integer id,boolean enabled){
         User user=repo.findById(id).orElseThrow();
