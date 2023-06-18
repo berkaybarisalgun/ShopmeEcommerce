@@ -7,9 +7,7 @@
     <list default="true" id="8eb0630b-be5a-4d34-8b17-0a3905705035" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/user/UserRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/user/UserRepositoryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <recent name="C:\Users\berka\OneDrive\Masaüstü\Projects\ShopmeEcommerce\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTests.testListFirstPage">
+  <component name="RunManager" selected="Spring Boot.ShopmeBackEndApplication">
     <configuration name="UserRepositoryTests.testCountById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ShopmeBackEnd" />
       <extension name="coverage">
@@ -259,6 +257,7 @@
       <workItem from="1686821209819" duration="2346000" />
       <workItem from="1686832031654" duration="3837000" />
       <workItem from="1687084330411" duration="37000" />
+      <workItem from="1687090900846" duration="1747000" />
     </task>
     <servers />
   </component>
