@@ -44,11 +44,12 @@ public class UserController { //controller->service->repo
 
 
 
-
+        model.addAttribute("currentPage",pageNum);
+        model.addAttribute("totalPages",page.getTotalPages());
         model.addAttribute("startCount",startCount);
         model.addAttribute("endCount",endCount);
         model.addAttribute("totalItems",page.getTotalElements());
-        model.addAttribute("listUsers",new ArrayList<User>());
+        model.addAttribute("listUsers",listUsers);
         return "users";
 
 
