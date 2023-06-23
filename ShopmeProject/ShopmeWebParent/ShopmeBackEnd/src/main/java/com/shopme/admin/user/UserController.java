@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -25,10 +26,8 @@ public class UserController { //controller->service->repo
     private UserService service;
 
     @GetMapping("/users")
-    public String listAll(Model model){
-        List<User> listUsers=service.listAll();
-        model.addAttribute("listUsers",listUsers);//name of listUsers in thymleaf is listUsers!!!
-        return "users";
+    public String listFirstPage(Model model){
+        return listByPage(1,model);
     }
 
     @GetMapping("/users/list/{pageNum}")
@@ -36,11 +35,20 @@ public class UserController { //controller->service->repo
         Page<User> page = service.listByPage(pageNum);
         List<User> listUsers = page.getContent();
 
-        System.out.println("Pagenum= "+pageNum);
-        System.out.println("Total elements= "+page.getTotalElements());
-        System.out.println("Total pages= "+page.getTotalPages());
+        long startCount=(pageNum-1)*UserService.USERS_PER_PAGE+1;
+        long endCount=startCount+UserService.USERS_PER_PAGE-1;
+        if(endCount>page.getTotalElements()){
+            endCount= page.getTotalElements();
+        }
 
-        model.addAttribute("listUsers",listUsers);
+
+
+
+
+        model.addAttribute("startCount",startCount);
+        model.addAttribute("endCount",endCount);
+        model.addAttribute("totalItems",page.getTotalElements());
+        model.addAttribute("listUsers",new ArrayList<User>());
         return "users";
 
 

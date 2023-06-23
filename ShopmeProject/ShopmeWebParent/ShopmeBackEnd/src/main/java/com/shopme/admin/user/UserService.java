@@ -107,6 +107,7 @@ public class UserService {
         repo.deleteById(id);
     }
 
+    @Transactional
     public void updateUserEnabledStatus(Integer id,boolean enabled){
         repo.updateEnabledStatus(id,enabled);
     }
