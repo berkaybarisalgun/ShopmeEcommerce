@@ -127,7 +127,6 @@
 				<th>
 					<a th:if="${sortField!='enabled'}" class="text-white"
 					   th:href="@{'/users/list/' + ${currentPage} + '?sortField=enabled&sortDir='+${sortDir}}">
-						Enabled</a>
 					<a th:if="${sortField =='enabled'}" class="text-white"
 					   th:href="@{'/users/list/' + ${currentPage} + '?sortField=enabled&sortDir='+${reverseSortDir}}">
 						Enabled</a>
